@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Website </title>
+  <title>RMZ-Project</title>
   <script src="https://kit.fontawesome.com/888fa70cfa.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,7 +14,7 @@
        <div class="container">
         <nav>
           <img src="images/Logo.png" class="logo">
-          <ul>
+          <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Project</a></li>
@@ -144,7 +144,7 @@
         for(tablink of tablinks){
           tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontent){
+        for(tabcontent of tabcontents){
           tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
